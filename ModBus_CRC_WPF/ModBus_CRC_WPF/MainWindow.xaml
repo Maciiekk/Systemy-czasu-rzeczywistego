@@ -17,19 +17,19 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Frame Bytes:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBlock Text="Bajty ramki:" Grid.Row="0" Grid.Column="0" Margin="5"/>
         <TextBox x:Name="FrameBytesTextBox" Grid.Row="0" Grid.Column="1" Margin="5" MaxLength="65"/>
 
-        <TextBlock Text="Repetitions:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBlock Text="Liczba powtórzeń:" Grid.Row="1" Grid.Column="0" Margin="5"/>
         <TextBox x:Name="RepetitionsTextBox" Grid.Row="1" Grid.Column="1" Margin="5" MaxLength="15"/>
 
-        <TextBlock Text="Total Time:" Grid.Row="3" Grid.Column="0" Margin="5"/>
+        <TextBlock Text="Czas Całkowity:" Grid.Row="3" Grid.Column="0" Margin="5"/>
         <TextBlock x:Name="TotalTimeTextBlock" Grid.Row="3" Grid.Column="1" Margin="5"/>
 
-        <TextBlock Text="Iteration Time:" Grid.Row="4" Grid.Column="0" Margin="5"/>
+        <TextBlock Text="Czas 1 iteracji:" Grid.Row="4" Grid.Column="0" Margin="5"/>
         <TextBlock x:Name="IterationTimeTextBlock" Grid.Row="4" Grid.Column="1" Margin="5"/>
 
-        <TextBlock Text="Checksum:" Grid.Row="5" Grid.Column="0" Margin="5"/>
+        <TextBlock Text="Suma kontrolna:" Grid.Row="5" Grid.Column="0" Margin="5"/>
         <TextBlock x:Name="ChecksumTextBlock" Grid.Row="5" Grid.Column="1" Margin="5"/>
 
         <Button x:Name="StartButton" Content="START" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Click="StartButton_Click"/>

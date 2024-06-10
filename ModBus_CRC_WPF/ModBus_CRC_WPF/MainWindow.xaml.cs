@@ -48,6 +48,12 @@ namespace CRC16Calculator
                 return;
             }
 
+            if (repetitions > 1000000000)
+            {
+                MessageBox.Show("Nieprawidłowa liczba powtórzeń.");
+                return;
+            }
+
             CRC crc = new CRC();
             byte[] crcResult = null;
 
