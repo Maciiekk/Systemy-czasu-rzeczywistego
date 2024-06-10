@@ -16,19 +16,19 @@ namespace CrcCalculator
             string bits = textBoxBits.Text.Trim();
             if (bits.Length > 96)
             {
-                MessageBox.Show("Ciąg bitów nie może mieć więcej niż 96 bitów");
+                MessageBox.Show("Ciąg bitów nie może mieć więcej niż 96 bitów.");
                 return;
             }
 
             if (!int.TryParse(textBoxRepetitions.Text.Trim(), out int repetitions))
             {
-                MessageBox.Show("Nieprawidłowa liczba powtórzeń");
+                MessageBox.Show("Nieprawidłowa liczba powtórzeń.");
                 return;
             }
 
             if(repetitions > 1000000000) 
             {
-                MessageBox.Show("Nieprawidłowa liczba powtórzeń");
+                MessageBox.Show("Nieprawidłowa liczba powtórzeń.");
                 return;
             }
             // worm-up execution

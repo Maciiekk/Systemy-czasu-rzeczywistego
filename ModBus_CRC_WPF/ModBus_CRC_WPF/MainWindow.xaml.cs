@@ -18,7 +18,7 @@ namespace CRC16Calculator
 
             if (string.IsNullOrWhiteSpace(frameBytes))
             {
-                MessageBox.Show("Frame bytes cannot be empty.");
+                MessageBox.Show("Ciąg bitów nie może być pusty.");
                 return;
             }
 
@@ -30,7 +30,7 @@ namespace CRC16Calculator
 
             if (!IsHexString(frameBytes))
             {
-                MessageBox.Show("Invalid frame bytes. It should only contain hexadecimal characters (0-9, A-F).");
+                MessageBox.Show("Ciąg bitów może składać się jedynie ze znaków: (0-9, A-F).");
                 return;
             }
 
@@ -38,13 +38,13 @@ namespace CRC16Calculator
 
             if (data.Length < 1 || data.Length > 32)
             {
-                MessageBox.Show("Frame bytes should represent between 4 and 256 bits (1 to 32 bytes).");
+                MessageBox.Show("Ciąg bitów musi składać się z określonej liczby bitów (od 1 do 32 bitów).");
                 return;
             }
 
             if (!int.TryParse(RepetitionsTextBox.Text, out int repetitions))
             {
-                MessageBox.Show("Invalid number of repetitions.");
+                MessageBox.Show("Nieprawidłowa liczba powtórzeń.");
                 return;
             }
 
