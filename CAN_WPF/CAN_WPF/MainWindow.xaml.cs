@@ -13,6 +13,12 @@ namespace CrcCalculator
 
         private void ButtonStart_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(textBoxBits.Text.Trim()))
+            {
+                MessageBox.Show("Ciąg bitów nie może być pusty.");
+                return;
+            }
+
             string bits = textBoxBits.Text.Trim();
             if (bits.Length > 96)
             {
